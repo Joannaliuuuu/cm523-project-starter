@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>This is the demo</title>
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles.normalize.css" />
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
-    <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
-    <!-- YOUR HTML GOES HERE -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+<div class="warp">
+    <div class="header">
+        <div class="logo">
+            <a href="">
+                <img src="images/game.png" alt=""/>
+            </a>
 
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-  </body>
+        </div>
+        <h1>
+            PICK YOUR OWN ENDING
+        </h1>
+        <div class="set">
+            <a onclick="navlist()"><img src="images/list.png" alt=""/></a>
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <ul>
+                <li><a class="active" href="">HOME</a></li>
+                <li><a href="">GAME</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top">
+                <h2>You get to choose how<br/>
+                    the story goes!</h2>
+                <button>START!</button>
+            </div>
+            <div class="bottom">
+                <div class="btl">
+                    <h2>How to play:</h2>
+                    <div class="list">
+                        <div class="item">
+                            <div>1</div>
+                            <p>Lorem ipsum dolor sit amet.<br/>
+                                consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="item">
+                            <div>2</div>
+                            <p>Praesent non efficitur dolor.<br/>
+                                sed auctor arcu.</p>
+                        </div>
+                        <div class="item">
+                            <div>3</div>
+                            <p>Curabitur in tincidunt ex.id<br/>
+                                maximus nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btr">
+                    <div class="btrl">
+                        <img src="images/2.jpg" alt="">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+                    <div class="btrr">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="flex" id="flex">
+        <li><a href="">HOME</a></li>
+        <li><a href="">GAME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <p>
+            <a onclick="out()">
+                <img src="images/out.png" alt=""/>
+            </a>
+        </p>
+    </ul>
+</div>
+<script>
+    let flx = document.getElementById("flex")
+
+    function navlist() {
+        flx.style.right = "0";
+    }
+
+    function out() {
+        flx.style.right = "-20vw"
+    }
+</script>
+</body>
 </html>

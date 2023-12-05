@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="styles/styles.css" />
+
+	</head>
+	<body>
+		<div class="warp">
+			<div class="header">
+				<div class="logo">
+					<a href="">
+						<img src="images/game.png" alt="" />
+					</a>
+
+				</div>
+				<h1>
+					PICK YOUR OWN ENDING
+				</h1>
+				<div class="set">
+					<a onclick="navlist()"><img src="images/list.png" alt="" /></a>
+
+				</div>
+			</div>
+			<div class="main">
+				<div class="left">
+					<ul>
+						<li><a href="index.html" >HOME</a></li>
+						<li><a href="game.html" class="active">GAME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="banner">
+				    <div class="rev">
+						<h2>
+							You get to choose how<br/>
+						    the story goes!
+						</h2>
+						<a href="game.html">START!</a>
+						
+					</div>
+					<p>
+						<img src="images/1.jpg" alt="" />
+					</p>
+				</div>
+
+				<div class="right">
+					<div class="allrig">
+						<div class="tab">
+							<div>
+								<a onclick="back()">
+									<img src="images/left.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<a onclick="forward()">
+									<img src="images/right.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="game">
+							<div class="block">
+								<img src="images/q1.png" alt="" />
+							</div>
+						</div>
+						<div class="text">
+							<p>
+								In the heart of Starhaven, a village nestled among gentle hills and whispering streams, life moves in harmony with nature.
+							</p>
+							<p>
+								You have lived in this village for eighteen years. It’s your birthday today. Like usual, you decide to spend the day in the woods. You're drawn to the woods' mystery, always on the lookout for rare herbs and plants. This forest, with its age-old trees and hidden glades, feels like a second home, a place of discovery.  
+							</p>
+							<p>
+								As the sun dips below the horizon, painting the sky in hues of orange and purple, you come across something extraordinary. Hidden at the base of an ancient oak tree is a bean that glimmers like a captured star. Its pulsing, ethereal light is mesmerizing, unlike any plant you've seen before.
+							</p>
+							<p>
+								Holding the bean, you feel a connection to these mysteries, an unspoken invitation to explore realms beyond the ordinary. The adventure that awaits is one of magic, wonder, and the unknown. You decide to:
+							</p>
+						</div>
+						<div class="selected">
+							<a href="page3.html">
+								
+								Plant the Bean. 
+							</a>
+							<a href="page4.html">
+								
+								Keep the Bean.
+							</a>
+							<a href="page2.html">
+								
+								Show the Bean to Grandma Willow, the village's wise elder.
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="flex" id="flex">
+				<li><a href="index.html" >HOME</a></li>
+				<li><a href="game.html" class="active">GAME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<p>
+					<a onclick="out()">
+						<img src="images/out.png" alt="" />
+					</a>
+				</p>
+			</ul>
+		</div>
+		<scripts src = "scripts/scripts.js"></scripts>
+	</body>
+</html>

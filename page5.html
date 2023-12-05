@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="styles/styles.css" />
+
+	</head>
+	<body>
+		<div class="warp">
+			<div class="header">
+				<div class="logo">
+					<a href="">
+						<img src="images/game.png" alt="" />
+					</a>
+
+				</div>
+				<h1>
+					PICK YOUR OWN ENDING
+				</h1>
+				<div class="set">
+					<a onclick="navlist()"><img src="images/list.png" alt="" /></a>
+
+				</div>
+			</div>
+			<div class="main">
+				<div class="left">
+					<ul>
+						<li><a href="index.html" >HOME</a></li>
+						<li><a href="game.html" class="active">GAME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="banner">
+				    <div class="rev">
+						<h2>
+							You get to choose how<br/>
+						    the story goes!
+						</h2>
+						<a href="game.html">START!</a>
+						
+					</div>
+					<p>
+						<img src="images/1.jpg" alt="" />
+					</p>
+				</div>
+
+				<div class="right">
+					<div class="allrig">
+						<div class="tab">
+							<div>
+								<a onclick="back()">
+									<img src="images/left.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<a onclick="forward()">
+									<img src="images/right.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="game">
+							<div class="block">
+								<img src="images/q5.png" alt="" />
+							</div>
+						</div>
+						<div class="text">
+							<p>
+								Orion walks out from the back room. He is a tall slender man dressed in a cloak adorned with patterns that look like certain constellations. He shares stories of the stars and offers insights about the magical bean, hinting at its connection to an ancient prophecy. He posits with a hint of wonder that this singular bean is not merely of this earth but of the vast, boundless sky. He implies that such a unique and otherworldly bean would find its perfect custodian in him, subtly encouraging you to entrust it to his care. You decide to: 
+							</p>
+						</div>
+						<div class="selected">
+							<a href="page13.html">
+								Believe Him and Give Him the Bean.
+							</a>
+							<a href="page8.html">
+								Refuse Him, Keep the Bean and Head Home.
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="flex" id="flex">
+				<li><a href="index.html" >HOME</a></li>
+				<li><a href="game.html" class="active">GAME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<p>
+					<a onclick="out()">
+						<img src="images/out.png" alt="" />
+					</a>
+				</p>
+			</ul>
+		</div>
+		<scripts src = "scripts/scripts.js"></scripts>
+	</body>
+</html>

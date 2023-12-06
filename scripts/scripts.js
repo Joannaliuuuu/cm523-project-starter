@@ -9,10 +9,6 @@ function out() {
     flx.style.right = "-20vw"
 }
 
-function navlist() {
-    flx.style.right = "0";
-}
-
 function forward(){
     history.forward();
 }

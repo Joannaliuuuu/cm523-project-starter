@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="styles/styles.css" />
+
+	</head>
+	<body>
+		<div class="warp" style="padding: 0;">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/game.png" alt="" />
+					</a>
+				</div>
+				<h1>
+					STARHAVEN JOURNEY
+				</h1>
+				<div class="set">
+					<a onclick="navlist()"><img src="images/list.png" alt="" /></a>
+				</div>
+			</div>
+			<div class="main">
+				<div class="picture">
+					<h1>
+						PHOTOS CREATED BY MIDJOURNEY
+					</h1>
+					<div class="picimgs">
+						<div>
+							
+						</div>
+						<div>
+							
+						</div>
+						<div>
+							
+						</div>
+						<div>
+							
+						</div>
+						<div>
+							
+						</div>
+						<div>
+							
+						</div>
+						<a href="index.html" class="gohome">HomePage</a>
+					</div>
+					
+				</div>
+			</div>
+			<ul class="flex" id="flex">
+			    <li><a href="index.html" class="active">HOME</a></li>
+			    <li><a href="game.html">GAME</a></li>
+			    <li><a href="about.html">ABOUT</a></li>
+				<li><a href="imgs.html">PHOTOS</a></li>
+			    <p>
+			        <a onclick="out()">
+			            <img src="images/out.png" alt=""/>
+			        </a>
+			    </p>
+			</ul>
+		</div>
+		<script>
+			let flx = document.getElementById("flex")
+
+			function navlist() {
+				flx.style.right = "0";
+			}
+
+			function out() {
+				flx.style.right = "-20vw"
+			}
+			function back(){
+				history.back();
+			}
+		</script>
+	</body>
+</html>
